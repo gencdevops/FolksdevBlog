@@ -19,7 +19,7 @@ public class Blog implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")
-    Author author;
+    private Author author;
 
 
     private LocalDateTime createdDate = LocalDateTime.now();
